@@ -16,7 +16,7 @@ import org.springframework.test.context.ContextConfiguration;
 @CucumberOptions(glue = {
             "com.crossminds.cucumberexample.configuration",
             "com.crossminds.cucumberexample.feature",
-            "com.crossminds.cucumberexample.steps"},
+            "com.crossminds.cucumberexample.service.calculator"},
         features = {
             "classpath:/calculator"
         })
