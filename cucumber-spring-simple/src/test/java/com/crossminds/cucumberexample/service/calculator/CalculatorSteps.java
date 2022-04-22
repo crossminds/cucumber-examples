@@ -1,6 +1,6 @@
 package com.crossminds.cucumberexample.service.calculator;
 
-import cucumber.api.java8.En;
+import io.cucumber.java8.En;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import static org.assertj.core.api.Assertions.assertThat;
