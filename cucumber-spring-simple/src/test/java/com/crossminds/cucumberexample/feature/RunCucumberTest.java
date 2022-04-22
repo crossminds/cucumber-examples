@@ -1,9 +1,9 @@
 package com.crossminds.cucumberexample.feature;
 
 import com.crossminds.cucumberexample.configuration.TestConfiguration;
-import cucumber.api.CucumberOptions;
-import cucumber.api.java8.GlueBase;
-import cucumber.api.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import io.cucumber.junit.Cucumber;
+import io.cucumber.spring.CucumberContextConfiguration;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
 
@@ -19,7 +19,11 @@ import org.springframework.test.context.ContextConfiguration;
             "com.crossminds.cucumberexample.service.calculator"},
         features = {
             "classpath:/calculator"
+        },
+        plugin = {"pretty",
+                "html:target/cucumber-html-report", "json:target/cucumber-json-reports/cucumber-calculator-json-report.json"
         })
 @ContextConfiguration(classes = TestConfiguration.class)
-public class RunCucumberTest implements GlueBase {
+@CucumberContextConfiguration
+public class RunCucumberTest {
 }
