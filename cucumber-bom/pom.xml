@@ -20,7 +20,7 @@
     <properties>
         <version.assertj>3.22.0</version.assertj>
         <version.cucumber>7.3.1</version.cucumber>
-        <version.logback>1.2.11</version.logback>
+        <version.logback>1.3.12</version.logback>
         <version.spring>5.3.19</version.spring>
     </properties>
 
